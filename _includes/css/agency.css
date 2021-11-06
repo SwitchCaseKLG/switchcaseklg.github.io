@@ -4,6 +4,37 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face{
+  font-family: "SwitchCase";
+  src: url("Amasis-MT.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "SwitchCaseBold";
+  src: url("Amasis-MT-Bold.ttf") format("truetype");
+}
+
+.switchcase {
+    font-family: "SwitchCase", "Amasis MT", "Roboto Slab";
+    font-weight: normal;
+    font-size: 32px;
+    color: #FFF;
+}
+
+.sc-brackets {
+    color: #00b0f0;
+}
+
+.sc-bold {
+    font-family: "SwitchCaseBold", "Amasis MT", "Roboto Slab";
+    font-weight: bold;
+}
+
+.sc-big {
+    font-size: 8em;
+    color: #000;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -287,7 +318,7 @@ header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 22px;
-    font-style: italic;
+    font-style: normal;
     line-height: 22px;
 }
 
