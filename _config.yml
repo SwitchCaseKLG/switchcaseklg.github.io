@@ -1,17 +1,17 @@
-url: https://y7kim.github.io
+url: https://switchcase.ch
 baseurl: ""
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
+title: switchcase klg
+email: info@switchcase.ch
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Manuel Jordan
   pic: 1
-  position: Lead Designer
+  position: Co-Founder, Lead Desktop Developer
   social:
     - title: twitter
       url: #
@@ -20,9 +20,9 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
+- name: Manuel Geissberger
   pic: 2
-  position: Lead Marketer
+  position: Co-Founder, Lead Web Developer
   social:
     - title: twitter
       url: #
@@ -31,9 +31,9 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
+- name: coming soon...
   pic: 3
-  position: Lead Developer
+  position: coming soon...
   social:
     - title: twitter
       url: #
@@ -57,8 +57,9 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: c/o Manuel Jordan
+  - line: Jesuitenweg 36
+  - line: 3902 Glis
 
 # Build settings
 markdown: kramdown
