@@ -31,8 +31,25 @@
 }
 
 .sc-big {
-    font-size: 8em;
     color: #000;
+}
+
+@media (max-width: 768px) {
+    .sc-big {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 769px) {
+    .sc-big {
+        font-size: 96px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sc-big {
+        font-size: 128px;
+    }
 }
 
 body {
