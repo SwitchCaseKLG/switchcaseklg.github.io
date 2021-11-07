@@ -34,13 +34,19 @@
     color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 399px) {
+    .sc-big {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 400px) {
     .sc-big {
         font-size: 48px;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .sc-big {
         font-size: 96px;
     }
@@ -334,9 +340,9 @@ header .intro-text {
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
-    font-style: normal;
-    line-height: 22px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 16px;
 }
 
 header .intro-text .intro-heading {
@@ -346,6 +352,13 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
+}
+
+@media(min-width:400px) {
+    header .intro-text .intro-lead-in {
+        font-size: 22px;
+        line-height: 22px;
+    }
 }
 
 @media(min-width:768px) {
