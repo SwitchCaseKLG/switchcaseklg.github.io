@@ -11,49 +11,38 @@ description: "Write an awesome description for your new site here. You can edit 
 people:
 - name: Manuel Jordan
   pic: 1
-  position: Co-Founder, Lead Desktop Developer
+  position: Co-Founder, Python/C# Developer
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+    - title: link
+      url: https://blog.einsteinserbe.ch
+    - title: github
+      url: https://github.com/EinsteinsErbe
+    - title: linkedin
+      url: https://www.linkedin.com/in/manuel-jordan-1350a8121
 
 - name: Manuel Geissberger
   pic: 2
-  position: Co-Founder, Lead Web Developer
+  position: Co-Founder, Web Developer
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
+    - title: link
+      url: https://saturn91.dev
+    - title: github
+      url: https://github.com/Saturn91
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/in/manuel-geissberger-04a051155
 
 - name: coming soon...
   pic: 3
-  position: coming soon...
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+  position: 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
+    url: https://twitter.com/SwitchCaseKLG
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/SwitchCaseKLG
+  - title: linkedin
+    url: https://www.linkedin.com/company/switchcase-klg
 
 # Postal address (add as many lines as necessary)
 address:
