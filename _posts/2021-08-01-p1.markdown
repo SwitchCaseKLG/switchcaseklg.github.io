@@ -1,0 +1,15 @@
+---
+title: Document Archive
+subtitle: Web App
+layout: default
+modal-id: 5
+date: 2021-08-01
+img: krbeso.jpg
+thumbnail: krbeso-thumbnail.jpg
+alt: KRBESO Logo
+project-date: Fall 2021
+client: Krebsregister Bern/Solothurn
+category: Web Development
+description: A service for archiving patient documents in a secure file system. By indexing the documents in a database, they can be easily searched via WebApp.
+
+---

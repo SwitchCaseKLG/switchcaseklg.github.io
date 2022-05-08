@@ -1,0 +1,15 @@
+---
+title: Autismus Wallis
+subtitle: Website Design
+layout: default
+modal-id: 4
+date: 2021-07-01
+img: autismus-wallis.png
+thumbnail: autismus-wallis-thumbnail.png
+alt: Autismus Wallis Website
+project-date: Summer 2021
+client: Verein Autismus-Wallis
+category: Web Development
+description: Renewal of the homepage including hosting.
+
+---

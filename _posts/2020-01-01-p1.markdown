@@ -1,0 +1,15 @@
+---
+title: The Glitcher
+subtitle: Game
+layout: default
+modal-id: 1
+date: 2020-01-01
+img: glitcher.png
+thumbnail: glitcher-thumbnail.png
+alt: Glitcher ingame screenshot
+project-date: January 2020
+client: 
+category: Game Development
+description: Submitted for the Wowie Jam 2.0 2020.
+
+---

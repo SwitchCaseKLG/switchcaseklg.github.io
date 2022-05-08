@@ -1,0 +1,15 @@
+---
+title: ANOROC
+subtitle: Game
+layout: default
+modal-id: 3
+date: 2021-02-01
+img: anoroc.png
+thumbnail: anoroc-thumbnail.png
+alt: ANOROC ingame screenshot
+project-date: February 2021
+client: 
+category: Game Development
+description: Submitted for the Brackeys Game Jam 2021.
+
+---
