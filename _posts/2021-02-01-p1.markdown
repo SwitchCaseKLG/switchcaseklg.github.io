@@ -8,7 +8,7 @@ img: anoroc.png
 thumbnail: anoroc-thumbnail.png
 alt: ANOROC ingame screenshot
 project-date: February 2021
-client: 
+playlink: https://magejoal.itch.io/anoroc-yo-mama-got-the-flu
 category: Game Development
 description: Submitted for the Brackeys Game Jam 2021.
 

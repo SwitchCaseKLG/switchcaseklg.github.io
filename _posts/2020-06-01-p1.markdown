@@ -8,7 +8,7 @@ img: duck-island.png
 thumbnail: duck-island-thumbnail.png
 alt: Duck Island ingame screenshot
 project-date: June 2020
-client: 
+playlink: https://einsteinserbe.itch.io/duck-island
 category: Game Development
 description: Submitted for the "I cant draw but want to make a game" Jam 2020.
 

@@ -8,7 +8,7 @@ img: glitcher.png
 thumbnail: glitcher-thumbnail.png
 alt: Glitcher ingame screenshot
 project-date: January 2020
-client: 
+playlink: https://saturn91.itch.io/theglitcher
 category: Game Development
 description: Submitted for the Wowie Jam 2.0 2020.
 
