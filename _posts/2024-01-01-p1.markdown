@@ -2,14 +2,16 @@
 title: ORCA - Oncological Reports Capturing Application
 subtitle: Web App
 layout: default
-modal-id: 5
+modal-id: 6
 date: 2024-01-01
 img: orca.jpg
 thumbnail: orca-thumbnail.jpg
 alt: ORCA Logo
+file: Technical_Description.pdf
+pricing: Pricing.pdf
 project-date: 2023-2024
 client: Krebsregister Bern/Solothurn
 category: Web Development
-description: An Application for capturing, management and evaluation of tumour reports for cancer registries
+description: An Application for capturing, management and evaluation of tumour reports for cancer registries. Developed in cooperation with Krebsregister Bern/Solothurn to simplify the recording of cancer cases.
 
 ---

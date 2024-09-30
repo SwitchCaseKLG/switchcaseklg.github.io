@@ -16,6 +16,20 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
+                            {% if post.file and post.file != "" and post.file != nil %}
+                            <div>
+                                <i class="fa fa-file-pdf-o"></i>
+                                <strong><a href="{{ post.file }}">Technical Description</a></strong>
+                            </div>
+                            {% endif %}
+                            {% if post.pricing and post.pricing != "" and post.pricing != nil %}
+                            <div>
+                                <i class="fa fa-file-pdf-o"></i>
+                                <strong><a href="{{ post.pricing }}">Pricing</a></strong>
+                            </div>
+                            {% endif %}
+                            
+                            <br>
                             <ul class="list-inline item-details">
                                 {% if post.client and post.client != "" and post.client != nil %}
                                 <li>Client:
