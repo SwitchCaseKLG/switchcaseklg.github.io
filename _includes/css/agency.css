@@ -926,3 +926,18 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+.clients-logos .col-md-3,
+.clients-logos .col-sm-6 {
+    display: flex;
+    justify-content: center;   /* Horizontal zentrieren */
+    align-items: center;       /* Vertikal zentrieren */
+    padding: 20px;
+    height: 150px;             /* Höhe je nach Design anpassen */
+}
+
+.clients-logos img {
+    max-height: 100px;         /* Max. Höhe der Logos */
+    max-width: 100%;
+    object-fit: contain;
+}

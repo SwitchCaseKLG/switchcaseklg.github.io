@@ -31,10 +31,6 @@ people:
     - title: linkedin
       url: https://www.linkedin.com/in/manuel-geissberger-04a051155
 
-- name: coming soon...
-  pic: 3
-  position: 
-
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
@@ -47,8 +43,8 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: c/o Manuel Jordan
-  - line: Jesuitenweg 36
-  - line: 3902 Glis
+  - line: Im Feld 7
+  - line: 3912 Termen
 
 # Build settings
 markdown: kramdown
