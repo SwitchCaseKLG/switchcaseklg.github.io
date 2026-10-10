@@ -29,10 +29,13 @@ services:
   items:
     - icon: wrench
       title: Tools und Desktop-Apps
-      text: Wiederkehrende Aufgaben am Computer kosten Sie täglich Zeit? Wir automatisieren sie mit Software, die genau auf Ihre Abläufe zugeschnitten ist. Sie möchten mehr aus Ihren Prozessen herausholen und von künstlicher Intelligenz profitieren? Wir unterstützen Sie beim Einstieg ins Machine Learning mit aktuellen Technologien.
+      text: Wiederkehrende Aufgaben am Computer kosten Sie täglich Zeit? Wir automatisieren sie mit Software, die genau auf Ihre Abläufe zugeschnitten ist. Wo es einen Mehrwert bringt, setzen wir dabei Machine Learning mit aktuellen Technologien ein.
     - icon: laptop
       title: Websites und Web-Apps
-      text: Sie brauchen eine eigene Website? Wir beraten Sie gerne und zeigen Ihnen verschiedene Wege dorthin. Sie haben besondere Anforderungen oder benötigen spezielle Funktionen? Wir entwickeln Web-Apps genau nach Ihren Wünschen.
+      text: Sie brauchen eine eigene Website? Wir gestalten und entwickeln sie für Sie. Sie haben besondere Anforderungen oder benötigen spezielle Funktionen? Wir entwickeln Web-Apps genau nach Ihren Wünschen.
+    - icon: lightbulb-o
+      title: Beratung
+      text: Sie wissen noch nicht, welche Lösung zu Ihnen passt? Wir schauen uns Ihre Abläufe gemeinsam mit Ihnen an, zeigen Ihnen verschiedene Wege auf und helfen bei der Wahl der passenden Technologie, zum Beispiel beim Einstieg in die künstliche Intelligenz.
 
 portfolio:
   heading: Portfolio

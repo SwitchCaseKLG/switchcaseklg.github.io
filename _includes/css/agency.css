@@ -320,6 +320,7 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin: 4px 0 0;
+    padding-top: 4px;
     font-family: {{ site.data.template.font.primary }};
     font-size: 13px;
     /* font-weight: 700; */
@@ -328,16 +329,16 @@ header .intro-text .intro-lead-in {
 
 header .intro-cta {
     position: absolute;
-    top: 72%;
+    /* centred in the lower patterned stripe of the image (72% to 100%) */
+    top: 90%;
     left: 50%;
-    margin-top: 8px;
     padding: 9px 18px;
     font-size: 13px;
     white-space: nowrap;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     /* Light halo and shadow so it reads clearly on top of the circuit pattern */
-    box-shadow: 0 0 0 5px rgba(255,255,255,.85), 0 8px 20px rgba(0,0,0,.25);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 1);
 }
 
 header .intro-cta:hover,
@@ -356,10 +357,6 @@ header .intro-cta:active {
         margin-top: 6px;
         font-size: 14px;
     }
-
-    header .intro-cta {
-        margin-top: 14px;
-    }
 }
 
 @media(min-width:768px) {
@@ -373,7 +370,6 @@ header .intro-cta:active {
     }
 
     header .intro-cta {
-        margin-top: 30px;
         padding: 16px 34px;
         font-size: 16px;
     }
@@ -387,10 +383,6 @@ header .intro-cta:active {
     header .intro-text .intro-lead-in {
         margin-top: 10px;
         font-size: 22px;
-    }
-
-    header .intro-cta {
-        margin-top: 40px;
     }
 }
 
