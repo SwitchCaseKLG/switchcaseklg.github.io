@@ -3,15 +3,18 @@ baseurl: ""
 
 # Site settings
 title: switchcase klg
+legal_name: SwitchCase KLG
 email: info@switchcase.ch
-description: "SwitchCase KLG Homepage"
+description: "Individuelle Softwareentwicklung: Web-Apps, Desktop-Tools und Automatisierung."
 
+# Company identification number (UID, e.g. CHE-123.456.789). Shown on the imprint when set.
+uid:
 
-# Team names, titles and social links
+# Team names and social links (role texts are in _data/i18n/*.yml under team.roles)
 people:
 - name: Manuel Jordan
+  key: jordan
   pic: 1
-  position: Co-Founder, Python/C# Developer
   social:
     - title: link
       url: https://blog.einsteinserbe.ch
@@ -21,8 +24,8 @@ people:
       url: https://www.linkedin.com/in/manuel-jordan-1350a8121
 
 - name: Manuel Geissberger
+  key: geissberger
   pic: 2
-  position: Co-Founder, Web Developer
   social:
     - title: link
       url: https://saturn91.dev
@@ -49,3 +52,15 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - startServer.bat
+  - startServer.sh
+  - vendor

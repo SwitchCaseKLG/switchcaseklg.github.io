@@ -1,0 +1,37 @@
+# Portfolio projects, shown in this order. Images are in /img/portfolio.
+- id: orca
+  title: ORCA - Oncological Reports Capturing Application
+  img: orca.jpg
+  thumbnail: orca-thumbnail.jpg
+  alt: ORCA Logo
+  file: Technical_Description.pdf
+  pricing: Pricing.pdf
+  client: Krebsregister Bern/Solothurn
+  de:
+    subtitle: Web-App
+    date: 2023-2024
+    category: Webentwicklung
+    description: Eine Anwendung zur Erfassung, Verwaltung und Auswertung von Tumormeldungen für Krebsregister. Entwickelt in Zusammenarbeit mit dem Krebsregister Bern/Solothurn, um die Erfassung von Krebsfällen zu vereinfachen.
+  en:
+    subtitle: Web App
+    date: 2023-2024
+    category: Web Development
+    description: An application for capturing, managing and evaluating tumour reports for cancer registries. Developed in cooperation with Krebsregister Bern/Solothurn to simplify the recording of cancer cases.
+
+- id: krbeso
+  img: krbeso.jpg
+  thumbnail: krbeso-thumbnail.jpg
+  alt: KRBESO Logo
+  client: Krebsregister Bern/Solothurn
+  de:
+    title: Dokumentenarchiv
+    subtitle: Web-App
+    date: Herbst 2021
+    category: Webentwicklung
+    description: Ein Dienst zur Archivierung von Patientendokumenten in einem gesicherten Dateisystem. Dank der Indexierung in einer Datenbank lassen sich die Dokumente bequem über eine Web-App durchsuchen.
+  en:
+    title: Document Archive
+    subtitle: Web App
+    date: Fall 2021
+    category: Web Development
+    description: A service for archiving patient documents in a secure file system. By indexing the documents in a database, they can be easily searched via a web app.

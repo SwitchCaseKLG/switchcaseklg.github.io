@@ -1,72 +1,55 @@
+{% assign t = site.data.i18n[page.lang] %}
+{% assign home = t.home | prepend: site.baseurl %}
+{% if page.layout == 'home' %}{% assign prefix = '' %}{% else %}{% assign prefix = home %}{% endif %}
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">{{ t.nav.toggle }}</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-				<div class="switchcase">switch
-                    <span class="sc-brackets sc-bold">{</span>
-                    <span class="txt-rotate sc-bold">case</span>
-                    <span class="sc-brackets sc-bold">}</span>
-                </div>
-				</a>
+                <a class="navbar-brand" href="{% if page.layout == 'home' %}#page-top{% else %}{{ home }}{% endif %}" aria-label="{{ site.title }}">
+                    <div class="switchcase">switch
+                        <span class="sc-brackets sc-bold">{</span>
+                        <span class="sc-bold">case</span>
+                        <span class="sc-brackets sc-bold">}</span>
+                    </div>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="main-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a href="{{ prefix }}#services">{{ t.nav.services }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a href="{{ prefix }}#portfolio">{{ t.nav.portfolio }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a href="{{ prefix }}#team">{{ t.nav.team }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#clients">Clients</a>
+                        <a href="{{ prefix }}#clients">{{ t.nav.clients }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a href="{{ prefix }}#contact">{{ t.nav.contact }}</a>
                     </li>
+                    {% if page.alt_url %}
+                    <li>
+                        <a class="lang-switch" href="{{ page.alt_url | prepend: site.baseurl }}" hreflang="{{ t.lang_switch.code }}" lang="{{ t.lang_switch.code }}" aria-label="{{ t.lang_switch.label }}">{{ t.lang_switch.short }}</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <!--<a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>-->
-                <div class="switchcase sc-big">switch
-                    <span class="sc-brackets sc-bold">{</span>
-                    <span
-                        class="txt-rotate sc-bold"
-                        data-period="3000"
-                        data-rotate='[ "case", "apps", "web", "tools", "games" ]'></span>
-                    <span class="sc-brackets sc-bold">}</span>
-                </div>
-				<br />
-                <div class="intro-lead-in">We have a solution for every case.</div>
-            </div>
-        </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-

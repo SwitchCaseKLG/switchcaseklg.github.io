@@ -1,0 +1,81 @@
+meta:
+  title: Custom software development
+  description: "switchcase klg builds custom software: web apps, desktop tools and automation, tailored to the way you work."
+  locale: en_GB
+
+home: /en/
+
+lang_switch:
+  code: de
+  short: DE
+  label: Deutsch
+
+nav:
+  toggle: Toggle navigation
+  services: Services
+  portfolio: Portfolio
+  team: Team
+  clients: Clients
+  contact: Contact
+
+hero:
+  lead: We have a solution for every case.
+  cta: Get in touch
+  rotate: '[ "case", "apps", "web", "tools" ]'
+
+services:
+  heading: Services
+  sub: Custom web apps, desktop tools and automation, built around the way you work.
+  items:
+    - icon: wrench
+      title: Tools and Desktop Apps
+      text: Repetitive tasks on the computer eating up your day? We automate them with software developed specifically for your workflow. Want to get more out of your processes with artificial intelligence? We help you get started with machine learning using current technologies.
+    - icon: laptop
+      title: Websites and Web Apps
+      text: Need a website of your own? We are happy to advise you and show you the different ways to get there. Have special requirements or need specific functionality? We build web apps exactly to your needs.
+
+portfolio:
+  heading: Portfolio
+  sub: Ongoing and completed projects.
+  details: Show details
+  file: Technical Description
+  pricing: Pricing
+  client: Client
+  date: Date
+  service: Service
+  close: Close
+
+team:
+  heading: Team
+  sub: The people behind switchcase.
+  roles:
+    jordan: Co-Founder, Python/C# Developer
+    geissberger: Co-Founder, Web Developer
+  social:
+    link: Website
+    github: GitHub
+    linkedin: LinkedIn
+    twitter: Twitter
+
+clients:
+  heading: Clients
+  sub: Organisations we have been able to help.
+
+contact:
+  heading: Contact
+  sub: Tell us about your project.
+  name: Name
+  email: Email
+  phone: Phone
+  optional: optional
+  message: Message
+  send: Send message
+  success: Thank you! Your message has been sent.
+  error: Sorry, your message could not be sent. Please try again later or write to us by email.
+
+footer:
+  copyright: Copyright
+  imprint: Imprint
+  imprint_url: /en/imprint/
+  privacy: Privacy
+  privacy_url: /en/privacy/

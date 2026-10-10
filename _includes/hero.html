@@ -1,0 +1,18 @@
+{% assign t = site.data.i18n[page.lang] %}
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <h1 class="switchcase sc-big" aria-label="{{ site.title }}">switch
+                    <span class="sc-brackets sc-bold">{</span>
+                    <span
+                        class="txt-rotate sc-bold"
+                        data-period="3000"
+                        data-rotate='{{ t.hero.rotate }}'>case</span>
+                    <span class="sc-brackets sc-bold">}</span>
+                </h1>
+                <p class="intro-lead-in">{{ t.hero.lead }}</p>
+            </div>
+            <a href="#contact" class="btn btn-xl intro-cta">{{ t.hero.cta }}</a>
+        </div>
+    </header>

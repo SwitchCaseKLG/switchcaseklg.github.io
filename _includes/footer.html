@@ -1,22 +1,23 @@
+{% assign t = site.data.i18n[page.lang] %}
   <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                    <span class="copyright">{{ t.footer.copyright }} &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        <li><a href="{{ network.url }}" target="_blank" rel="noopener" aria-label="{{ t.team.social[network.title] | default: network.title }}"><i class="fa fa-{{ network.title }}" aria-hidden="true"></i></a>
                         </li>
                         {% endfor %}
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <li><a href="{{ t.footer.imprint_url | prepend: site.baseurl }}">{{ t.footer.imprint }}</a>
                         </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="{{ t.footer.privacy_url | prepend: site.baseurl }}">{{ t.footer.privacy }}</a>
                         </li>
                     </ul>
                 </div>

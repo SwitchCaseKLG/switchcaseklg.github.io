@@ -1,58 +1,51 @@
+{% assign t = site.data.i18n[page.lang] %}
  <!-- Portfolio Modals -->
- {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+ {% for project in site.data.projects %}
+    {% assign p = project[page.lang] %}
+    {% assign title = p.title | default: project.title %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ project.id }}" tabindex="-1" role="dialog" aria-labelledby="portfolioModalTitle-{{ project.id }}" aria-hidden="true">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="{{ t.portfolio.close }}">
                 <div class="lr">
                     <div class="rl">
                     </div>
                 </div>
-            </div>
+            </button>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
-                            {% if post.file and post.file != "" and post.file != nil %}
+                            <h2 id="portfolioModalTitle-{{ project.id }}">{{ title }}</h2>
+                            <img src="{{ "/img/portfolio/" | prepend: site.baseurl }}{{ project.img }}" class="img-responsive img-centered" alt="{{ project.alt }}" loading="lazy">
+                            <p>{{ p.description }}</p>
+                            {% if project.file %}
                             <div>
-                                <i class="fa fa-file-pdf-o"></i>
-                                <strong><a href="{{ post.file }}">Technical Description</a></strong>
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                <strong><a href="{{ project.file | prepend: "/" | prepend: site.baseurl }}">{{ t.portfolio.file }}</a></strong>
                             </div>
                             {% endif %}
-                            {% if post.pricing and post.pricing != "" and post.pricing != nil %}
+                            {% if project.pricing %}
                             <div>
-                                <i class="fa fa-file-pdf-o"></i>
-                                <strong><a href="{{ post.pricing }}">Pricing</a></strong>
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                <strong><a href="{{ project.pricing | prepend: "/" | prepend: site.baseurl }}">{{ t.portfolio.pricing }}</a></strong>
                             </div>
                             {% endif %}
-                            
+
                             <br>
                             <ul class="list-inline item-details">
-                                {% if post.client and post.client != "" and post.client != nil %}
-                                <li>Client:
-                                    <strong><a>{{ post.client }}</a>
-                                    </strong>
+                                {% if project.client %}
+                                <li>{{ t.portfolio.client }}:
+                                    <strong>{{ project.client }}</strong>
                                 </li>
                                 {% endif %}
-                                {% if post.playlink and post.playlink != "" and post.playlink != nil %}
-                                <li>Link:
-                                    <strong><a href="{{ post.playlink }}">Play here</a>
-                                    </strong>
+                                <li>{{ t.portfolio.date }}:
+                                    <strong>{{ p.date }}</strong>
                                 </li>
-                                {% endif %}
-                                <li>Date:
-                                    <strong><a>{{ post.project-date }}</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a>{{ post.category }}</a>
-                                    </strong>
+                                <li>{{ t.portfolio.service }}:
+                                    <strong>{{ p.category }}</strong>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> {{ t.portfolio.close }}</button>
                         </div>
                     </div>
                 </div>

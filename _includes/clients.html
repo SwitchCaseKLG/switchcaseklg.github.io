@@ -1,26 +1,32 @@
+{% assign t = site.data.i18n[page.lang] %}
 <!-- Clients Aside -->
-<section id="clients" class="clients">
+<section id="clients" class="clients bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Our Clients</h2>
-                <h3 class="section-subheading text-muted">All clients we have been able to help.</h3>
+                <h2 class="section-heading">{{ t.clients.heading }}</h2>
+                <h3 class="section-subheading text-muted">{{ t.clients.sub }}</h3>
             </div>
         </div>
-        <div class="row clients-logos">
-            <div class="col-md-3 col-sm-6">
-                <a href="https://www.unibe.ch">
-                    <img src="img/logos/unibe.png" class="img-responsive img-centered" alt="">
+        <div class="row row-centered clients-logos">
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="https://www.unibe.ch" target="_blank" rel="noopener">
+                    <img src="{{ "/img/logos/unibe.png" | prepend: site.baseurl }}" class="img-responsive img-centered" alt="Universität Bern" loading="lazy">
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="https://www.krebsregister.unibe.ch">
-                    <img src="img/logos/krbeso.png" class="img-responsive img-centered" alt="">
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="https://www.krebsregister.unibe.ch" target="_blank" rel="noopener">
+                    <img src="{{ "/img/logos/krbeso.png" | prepend: site.baseurl }}" class="img-responsive img-centered" alt="Krebsregister Bern Solothurn" loading="lazy">
                 </a>
             </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="https://www.usz.ch">
-                    <img src="img/logos/usz_logo.svg" class="img-responsive img-centered" alt="">
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="https://www.usz.ch" target="_blank" rel="noopener">
+                    <img src="{{ "/img/logos/usz_logo.svg" | prepend: site.baseurl }}" class="img-responsive img-centered" alt="Universitätsspital Zürich" loading="lazy">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+                <a href="https://www.krebsregister-aargau.ch" target="_blank" rel="noopener">
+                    <img src="{{ "/img/logos/kra_logo.jpg" | prepend: site.baseurl }}" class="img-responsive img-centered" alt="Krebsregister Aargau" loading="lazy">
                 </a>
             </div>
         </div>

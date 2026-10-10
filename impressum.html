@@ -1,0 +1,29 @@
+---
+layout: page
+lang: de
+title: Impressum
+permalink: /impressum/
+alt_url: /en/imprint/
+---
+<h2>Kontaktadresse</h2>
+<address>
+    <strong>{{ site.legal_name }}</strong><br>
+    {% for adr in site.address %}{{ adr.line }}<br>
+    {% endfor %}Schweiz
+</address>
+<p>E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+
+<h2>Vertretungsberechtigte Personen</h2>
+<p>{% for member in site.people %}{{ member.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+
+<h2>Rechtsform</h2>
+<p>Kollektivgesellschaft (KLG){% if site.uid %}<br>Unternehmens-Identifikationsnummer (UID): {{ site.uid }}{% endif %}</p>
+
+<h2>Haftungsausschluss</h2>
+<p>Die Inhalte dieser Website werden mit Sorgfalt erstellt. Wir übernehmen jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Informationen. Haftungsansprüche wegen Schäden materieller oder immaterieller Art, die aus dem Zugriff auf die veröffentlichten Informationen oder deren Nutzung entstehen, werden ausgeschlossen, soweit dies gesetzlich zulässig ist.</p>
+
+<h2>Links</h2>
+<p>Verweise auf Websites Dritter liegen ausserhalb unseres Verantwortungsbereichs. Der Zugriff auf solche Websites und deren Nutzung erfolgen auf eigene Gefahr.</p>
+
+<h2>Urheberrechte</h2>
+<p>Die Urheber- und alle anderen Rechte an Inhalten, Bildern und Dateien auf dieser Website gehören {{ site.legal_name }} oder den jeweils genannten Rechteinhabern. Logos von Kunden sind Eigentum der jeweiligen Organisationen.</p>

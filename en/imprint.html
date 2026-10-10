@@ -1,0 +1,29 @@
+---
+layout: page
+lang: en
+title: Imprint
+permalink: /en/imprint/
+alt_url: /impressum/
+---
+<h2>Contact address</h2>
+<address>
+    <strong>{{ site.legal_name }}</strong><br>
+    {% for adr in site.address %}{{ adr.line }}<br>
+    {% endfor %}Switzerland
+</address>
+<p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+
+<h2>Authorised representatives</h2>
+<p>{% for member in site.people %}{{ member.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+
+<h2>Legal form</h2>
+<p>General partnership (Kollektivgesellschaft, KLG){% if site.uid %}<br>Company identification number (UID): {{ site.uid }}{% endif %}</p>
+
+<h2>Disclaimer</h2>
+<p>The content of this website is prepared with care. However, we give no guarantee that the information is correct, complete or up to date. Liability claims for material or immaterial damage arising from accessing or using the published information are excluded to the extent permitted by law.</p>
+
+<h2>Links</h2>
+<p>References to third-party websites are outside our area of responsibility. Accessing and using such websites is at your own risk.</p>
+
+<h2>Copyright</h2>
+<p>The copyright and all other rights to content, images and files on this website belong to {{ site.legal_name }} or the rights holders named. Client logos are the property of the respective organisations.</p>

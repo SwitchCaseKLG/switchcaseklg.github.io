@@ -1,0 +1,81 @@
+meta:
+  title: Individuelle Softwareentwicklung
+  description: "switchcase klg entwickelt individuelle Software: Web-Apps, Desktop-Tools und Automatisierung, zugeschnitten auf Ihre Arbeitsweise."
+  locale: de_CH
+
+home: /
+
+lang_switch:
+  code: en
+  short: EN
+  label: English
+
+nav:
+  toggle: Navigation ein-/ausblenden
+  services: Angebot
+  portfolio: Portfolio
+  team: Team
+  clients: Kunden
+  contact: Kontakt
+
+hero:
+  lead: Für jeden Fall die passende Lösung.
+  cta: Kontakt aufnehmen
+  rotate: '[ "case", "apps", "web", "tools" ]'
+
+services:
+  heading: Angebot
+  sub: Massgeschneiderte Web-Apps, Desktop-Tools und Automatisierung, entwickelt für Ihre Arbeitsweise.
+  items:
+    - icon: wrench
+      title: Tools und Desktop-Apps
+      text: Wiederkehrende Aufgaben am Computer kosten Sie täglich Zeit? Wir automatisieren sie mit Software, die genau auf Ihre Abläufe zugeschnitten ist. Sie möchten mehr aus Ihren Prozessen herausholen und von künstlicher Intelligenz profitieren? Wir unterstützen Sie beim Einstieg ins Machine Learning mit aktuellen Technologien.
+    - icon: laptop
+      title: Websites und Web-Apps
+      text: Sie brauchen eine eigene Website? Wir beraten Sie gerne und zeigen Ihnen verschiedene Wege dorthin. Sie haben besondere Anforderungen oder benötigen spezielle Funktionen? Wir entwickeln Web-Apps genau nach Ihren Wünschen.
+
+portfolio:
+  heading: Portfolio
+  sub: Laufende und abgeschlossene Projekte.
+  details: Details anzeigen
+  file: Technische Beschreibung
+  pricing: Preise
+  client: Kunde
+  date: Zeitraum
+  service: Leistung
+  close: Schliessen
+
+team:
+  heading: Team
+  sub: Die Köpfe hinter switchcase.
+  roles:
+    jordan: Mitgründer, Python/C#-Entwickler
+    geissberger: Mitgründer, Webentwickler
+  social:
+    link: Website
+    github: GitHub
+    linkedin: LinkedIn
+    twitter: Twitter
+
+clients:
+  heading: Kunden
+  sub: Organisationen, die wir unterstützen durften.
+
+contact:
+  heading: Kontakt
+  sub: Erzählen Sie uns von Ihrem Projekt.
+  name: Name
+  email: E-Mail
+  phone: Telefon
+  optional: optional
+  message: Nachricht
+  send: Nachricht senden
+  success: Vielen Dank! Ihre Nachricht wurde gesendet.
+  error: Ihre Nachricht konnte leider nicht gesendet werden. Bitte versuchen Sie es später noch einmal oder schreiben Sie uns per E-Mail.
+
+footer:
+  copyright: Copyright
+  imprint: Impressum
+  imprint_url: /impressum/
+  privacy: Datenschutz
+  privacy_url: /datenschutz/
